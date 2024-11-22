@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halloween</title>
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <h1>9. 2E... 34A 35B 36C 37D<br />
+  17 15 2 19 34 16</h1>
+  <img src="static/jack o lantern.jpg" width="650">
+
+  <!-- precisa de dica? -->
+  <form method="POST">
+    <label for="resposta">Insira sua resposta:</label>
+    <input type="text" id="resposta" name="resposta" required>
+    <button type="submit">Enviar</button>
+  </form>
+
+  {% if erro %}
+    <p style="color: red;">Resposta incorreta! Tente novamente.</p>
+  {% endif %}
+</body>
+</html>

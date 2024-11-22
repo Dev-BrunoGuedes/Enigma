@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Simpsons</title>
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <h1>8. hom e ski</h1>
+  <img src="static/entre eles.png" width="650">
+
+  <!-- uma circunferencia -->
+  <form method="POST">
+    <label for="resposta">Insira sua resposta:</label>
+    <input type="text" id="resposta" name="resposta" required>
+    <button type="submit">Enviar</button>
+  </form>
+
+  {% if erro %}
+    <p style="color: red;">Resposta incorreta! Tente novamente.</p>
+  {% endif %}
+</body>
+</html>

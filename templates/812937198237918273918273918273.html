@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minecraft de novo?</title>
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <h1>3. Parabéns novamente.</h1>
+  <br/>
+  <img src="static/mods.png" width="850">
+
+  <!-- Caixa de resposta -->
+  <form method="POST">
+    <label for="resposta">Insira sua resposta:</label>
+    <input type="text" id="resposta" name="resposta" required>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <!-- Mensagem de erro (opcional) -->
+  {% if erro %}
+    <p style="color: red;">Resposta incorreta! Tente novamente.</p>
+  {% endif %}
+</body>
+</html>

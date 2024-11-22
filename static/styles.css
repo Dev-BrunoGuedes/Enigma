@@ -1,0 +1,49 @@
+html, body {
+  height: 100%;            /* Faz o HTML e o body ocuparem a altura total */
+  margin: 0;               /* Remove margens padrão */
+  background-color: black; /* Define o fundo como preto */
+  color: white;            /* Define o texto como branco */
+  margin-top: 100px; /* Isso garante que o estilo seja aplicado apenas no header diretamente filho do body */
+  text-align: center;
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px; /* Espaçamento entre os elementos dentro do formulário */
+}
+
+/* Estilo do input de texto */
+input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+/* Estilo do botão de envio */
+input[type="submit"] {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Estilo do label */
+label {
+    font-size: 18px;
+    margin-bottom: 0.8px; /* Distância entre o label e o campo de texto */
+}

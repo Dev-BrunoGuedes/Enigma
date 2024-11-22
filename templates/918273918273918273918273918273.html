@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pt - 3B0Nt71</title>
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <h1>L 01001001 S 01000010 O 01000001<br />b1t.ly/</h1>
+
+  <!-- Caixa de resposta -->
+  <form method="POST">
+    <label for="resposta">Insira sua resposta:</label>
+    <input type="text" id="resposta" name="resposta" required>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <!-- Mensagem de erro (opcional) -->
+  {% if erro %}
+    <p style="color: red;">Resposta incorreta! Tente novamente.</p>
+  {% endif %}
+</body>
+</html>
