@@ -41,4 +41,4 @@ def fim():
     return render_template('fim.html')  # Página final
 
 if __name__ == "__main__":
-    app.run("0.0.0.0", 8080)
+    app.run(debug=True)
